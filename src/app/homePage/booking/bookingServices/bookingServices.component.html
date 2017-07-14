@@ -1,0 +1,18 @@
+
+            <ul *ngIf="serviceSelected=='services'" >
+                <!--[@signal]="signal"-->
+                <!--<h1>Pick your service...</h1>
+                <hr>-->
+               <li *ngFor="let booking of bookings" (click)="grabBarbersArray(booking)"><span>{{booking.name}}</span><button class="button-num">Book</button><span class="cost-of-cut">€{{booking.cost}}</span><br> <h4>{{booking.description}}</h4> </li>
+               
+               
+                <!--<li><span>Beard Trim + Cut</span><a class="btn btn-full" href="#">Book</a><span class="cost-of-cut">€14</span><br> <h4>Full Hot Towel Shave included </h4></li><hr>
+                <li><span>Highlights + Cut</span><a class="btn btn-full" href="#">Book</a><span class="cost-of-cut">€18</span><br> <h4>Full Wash, Blowdry and Cut</h4> </li><hr>
+                <li><span>Fade Cut </span><a class="btn btn-full" href="#">Book</a><span class="cost-of-cut">€16</span><br> <h4>Tight cut back and sides</h4>  </li><hr>
+                <li><span>Beard Trim + Cut</span><a class="btn btn-full" href="#">Book</a><span class="cost-of-cut">€22</span><br> <h4>Full Hot Towel Shave included </h4> </li><hr>
+                <li><span>Highlights + Cut</span><a class="btn btn-full" href="#">Book</a><span class="cost-of-cut">€25</span><br> <h4>Full Wash, Blowdry and Cut</h4> </li><hr>
+                <li><span>Highlights + Cut</span><a class="btn btn-full" href="#">Book</a><span class="cost-of-cut">€18</span><br> <h4>Full Wash, Blowdry and Cut</h4> </li><hr>
+                <li><span>Fade Cut </span><a class="btn btn-full" href="#">Book</a><span class="cost-of-cut">€16</span><br> <h4>Tight cut back and sides</h4>  </li><hr>
+                <li><span>Beard Trim + Cut</span><a class="btn btn-full" href="#">Book</a><span class="cost-of-cut">€22</span><br> <h4>Full Hot Towel Shave included </h4> </li><hr>
+                <li><span>Highlights + Cut</span><a class="btn btn-full" href="#">Book</a><span class="cost-of-cut">€25</span><br> <h4>Full Wash, Blowdry and Cut</h4> </li><hr>-->
+            </ul>

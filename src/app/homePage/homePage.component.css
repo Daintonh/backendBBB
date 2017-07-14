@@ -1,0 +1,51 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    display: block;
+    z-index: 5;
+    color: #fff;
+    font-weight: 200;
+    background-size: cover;
+    background-color: blue;
+    background-position: center center;
+}
+
+.top-nav {
+    color: black;
+    background-color: #DAA520;
+    width: 55px;
+    height: 45px;
+    padding-top: 9px;
+    margin: 0 auto;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+.scrolling {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    margin-right: 30px;
+    font-size: 20px;
+    margin-top: 30px;
+    
+
+}
+
+.notification {
+    font-size: 10px;
+    margin-left: -2px;
+    /* margin-bottom: 5px; */
+    color: white;
+    position: fixed;
+    background-color: red;
+    padding-right: 4px;
+    vertical-align: top;
+    padding-left: 4px;
+    border-radius: 50%;
+}

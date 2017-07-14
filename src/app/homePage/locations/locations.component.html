@@ -1,0 +1,71 @@
+<section class="locations">
+    <div class="row">
+        <h2 style="color: white">Check Out Our Staff...</h2>
+    </div>
+    <div class="row" style="margin-top: 40px;">
+        <div *ngFor="let staff of staffArray" class="col span-1-of-4 box">
+            <!--<img src="/assets/img/barber1.jpg" alt="Lisbon">-->
+            <img src={{staff.imageStorageRef}} />
+            
+            <h3>{{staff.name}}</h3>
+            <div class="city-feature">
+               <i class="fa fa-map-marker icon-small"></i>5 Cope Street
+            </div>
+            <div class="city-feature">
+              <i class="fa fa-phone icon-small"></i>{{staff.phoneNumber}}
+            </div>
+             <div class="city-feature">
+             <i class="fa fa-facebook-official icon-small"></i>
+             <a href="#">@BedfordStuy</a>
+            </div>
+        </div>
+
+         <!--<div class="col span-1-of-4 box">
+            <img src="/assets/img/barber2.jpg" alt="Lisbon">
+            <h3>Nidge Warren</h3>
+            <div class="city-feature">
+               <i class="fa fa-map-marker icon-small"></i>5 Cope Street
+            </div>
+            <div class="city-feature">
+              <i class="fa fa-phone icon-small"></i>087 298 499
+            </div>
+             <div class="city-feature">
+             <i class="fa fa-facebook-official icon-small"></i>
+             <a href="#">@BedfordStuy</a>
+            </div>
+        </div>-->
+
+
+         <!--<div class="col span-1-of-4 box">
+            <img src="/assets/img/barber3.jpg" alt="Lisbon">
+            <h3>Barry Cotton</h3>
+            <div class="city-feature">
+               <i class="fa fa-map-marker icon-small"></i> 5 Cope Street
+            </div>
+            <div class="city-feature">
+              <i class="fa fa-phone icon-small"></i>085 344 529
+            </div>
+             <div class="city-feature">
+             <i class="fa fa-facebook-official icon-small"></i>
+             <a href="#">@BedfordMaple</a>
+            </div>
+        </div>-->
+
+
+         <!--<div class="col span-1-of-4 box">
+            <img src="/assets/img/barber4.jpg" alt="Lisbon">
+            <h3> Issy Jones</h3>
+            <div class="city-feature">
+               <i class="fa fa-map-marker icon-small"></i>5 Cope Street
+            </div>
+            <div class="city-feature">
+              <i class="fa fa-phone icon-small"></i>086 333 290
+            </div>
+             <div class="city-feature">
+             <i class="fa fa-facebook-official icon-small"></i>
+             <a href="#">@BedfordMarket</a>
+            </div>
+        </div>-->
+
+    </div>
+</section>

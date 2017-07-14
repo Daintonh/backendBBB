@@ -1,0 +1,109 @@
+<div class="modal fade" [id]="modalDeleteUser" data-backdrop="false">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+             <div class="modal-body">
+                 <checkOutSection *ngIf="checkOutOrCart == 'Checkout'"></checkOutSection>
+
+                   <!--<h3 class="first">Basic</h3>
+<p-autoComplete [(ngModel)]="country" [suggestions]="filteredCountriesSingle" (completeMethod)="filterCountrySingle($event)" [size]="30"
+    placeholder="Customer" [minLength]="1"></p-autoComplete>
+<span style="margin-left:10px">Email: {{customerEmail}}</span>-->
+            
+            <!--<h2>Booking Details</h2>
+            <br>-->
+
+            <div *ngIf="checkOutOrCart == 'Cart'" class="userDetails">
+            
+            <!--<h4 class="">{{customer.id}}</h4>
+            <br>
+            <h4 class="">{{customer.name}}</h4>
+            <br>
+            <h4 class="">{{customer.expenditure}}</h4>
+            <br>
+            <h4 class="">{{customer.hasApp}}</h4>
+            <br>
+            <h4 class="">{{customer.notes}}</h4>-->
+
+<!--All goes in one form (UserForm)
+            Cost of booking
+            Type of booking
+            Time selected*
+            Customer for booking
+
+
+All goes in dropdown box
+            Customer's name
+            Customer's number + email
+            Customer's bookings
+            Customer Credit
+            Notes
+            Expenditure
+            Loyalty-->
+
+ <h2>Cart Details</h2>
+                <!--<h2> Booking Details</h2>-->
+                
+                <h4></h4>
+        <h3 *ngIf="cartBeingUsed =='false' ">Cart is Empty</h3>
+<div *ngIf="cartBeingUsed == 'true' " class="holdsBookings">
+
+    
+                                <!--<h3>Bookings</h3>-->
+                         <div  class="backroundWhite">
+                             
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <th>Name</th>
+                                    	<th>Cost</th>
+                                    	<th></th>
+                                    	<th style="text-align: center">Quantity</th>
+                                    	<th></th>
+                                        <th></th>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let product of stocksSelected">
+
+                                            <td>{{product.name}}</td>
+                                            <td>€{{product.cost}}</td>
+                                           <td></td>
+                                           <td style="text-align: center">{{product.quantityInCart}}</td>
+                                           <td></td>
+                                            <td class="td-actions text-right">
+                                             <!--<button type="button" rel="tooltip" title="Loyal Customer" class="btn btn-warning btn-simple btn-xs">
+                                                <i class="fa fa-bullseye"></i>
+                                            </button>-->
+                                            <button type="button" rel="tooltip" title="View Details"  class="btn btn-info btn-simple btn-xs" (click)="incrementQuantity(product)">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                            <button type="button" rel="tooltip" title="Block Customer" class="btn btn-danger btn-simple btn-xs" (click)="removeFromList(product)">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </td>
+                                        </tr>
+                                          
+                                 
+                          
+                                    </tbody>
+                                </table>
+                                <hr>
+                                <div class="rrr">
+                            <!--<li *ngFor="let date of dateSetArray"><q>{{date.date}}</q> {{date.epochNumber}}</li> -->
+                                    <h3 style="margin: 30px">Cart Total: €{{cartTotalPrice}}</h3>
+                                </div>
+</div>
+</div>
+             </div>
+
+            <div class="modal-footer">
+                    <div class="row">
+                        <button class="btn btn-danger btn-xl" type="button" data-dismiss="modal" style="margin-right: 5px;">Cancel</button>
+                        <!--<button class="btn btn-warning btn-xl" type="submit" data-dismiss="modal">Make Loyal</button>
+                        <button class="btn btn-secondary btn-xl" type="button" data-dismiss="modal">Top Up</button>-->
+                        <button (click)="toggleCheckout(checkOutOrCart)" class="btn btn-success btn-xl" type="submit" style="margin-left: 5px;">Checkout</button>
+                        <!--form="ngForm" [disabled]="!notBookedForm.form.valid"-->
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>

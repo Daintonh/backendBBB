@@ -1,0 +1,86 @@
+<section class="locations">
+    <div class="row">
+        <h2>Product Range</h2>
+    </div>
+    <div class="row">
+        <div *ngFor="let stock of stockArray" class="col span-1-of-4 box">
+            <!--<img src="resources/img/barber1.jpg" alt="Lisbon">-->
+            <div (click)="addToCart(stock)"class="oneThird">
+            <img src={{stock.imageStorageRef}} class="productImg"/>
+                 <div class="overlay">
+                     <!--[ngClass]="setClass()"-->
+    <div class="text">
+        <!--<p></p>-->
+        <p>
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            <!--<i class="fa fa-plus-square-o" aria-hidden="true"></i>-->
+        <!--<i class="fa fa-plus-square" aria-hidden="true"></i> -->
+        <br> Add To Basket </p> 
+      <!--<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>-->
+    </div>
+  </div>
+  </div>
+            <h3>{{stock.name}}</h3>
+            <div class="city-feature">
+               <i class="fa fa-map-marker icon-small"></i>€{{stock.cost}}
+            </div>
+            <div class="city-feature">
+              <i class="fa fa-phone icon-small"></i>{{stock.productDescription}}
+            </div>
+             <div class="city-feature">
+             <i class="fa fa-facebook-official icon-small"></i>
+             <a href="#">@BedfordJones</a>
+            </div>
+        </div>
+
+         <!--<div class="col span-1-of-4 box">
+            <img src="resources/img/barber2.jpg" alt="Lisbon">
+            <h3>Nidge Warren</h3>
+            <div class="city-feature">
+               <i class="fa fa-map-marker icon-small"></i>5 Cope Street
+            </div>
+            <div class="city-feature">
+              <i class="fa fa-phone icon-small"></i>087 298 499
+            </div>
+             <div class="city-feature">
+             <i class="fa fa-facebook-official icon-small"></i>
+             <a href="#">@BedfordStuy</a>
+            </div>
+        </div>-->
+
+<!--
+         <div class="col span-1-of-4 box">
+            <img src="resources/img/barber3.jpg" alt="Lisbon">
+            <h3>Barry Cotton</h3>
+            <div class="city-feature">
+               <i class="fa fa-map-marker icon-small"></i> 5 Cope Street
+            </div>
+            <div class="city-feature">
+              <i class="fa fa-phone icon-small"></i>085 344 529
+            </div>
+             <div class="city-feature">
+             <i class="fa fa-facebook-official icon-small"></i>
+             <a href="#">@BedfordMaple</a>
+            </div>
+        </div>-->
+
+<!--
+         <div class="col span-1-of-4 box">
+            <img src="resources/img/barber4.jpg" alt="Lisbon">
+            <h3> Issy Jones</h3>
+            <div class="city-feature">
+               <i class="fa fa-map-marker icon-small"></i>5 Cope Street
+            </div>
+            <div class="city-feature">
+              <i class="fa fa-phone icon-small"></i>086 333 290
+            </div>
+             <div class="city-feature">
+             <i class="fa fa-facebook-official icon-small"></i>
+             <a href="#">@BedfordMarket</a>
+            </div>
+        </div>-->
+
+    </div>
+</section>

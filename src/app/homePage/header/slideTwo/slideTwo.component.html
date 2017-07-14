@@ -1,0 +1,25 @@
+<div [@fadeInOut]="fadeInOut" *ngIf="pageIndex=='slideTwo'" class="mainBg">
+     <div class="middle">
+        <!--[@signal]="signal"-->
+        <span>
+            <button class="leftButton" (click)="goBackData()">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+        </span> 
+       
+       <img src="assets/img/berber.png" alt="OurLogo" class="logo">
+                 
+
+        <span>
+            <button class="rightButton" (click)="setNewData()">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </span>
+
+        
+
+
+    </div>
+    <a class="btn btn-full" href="home#booking">Book Now</a>
+   
+</div>

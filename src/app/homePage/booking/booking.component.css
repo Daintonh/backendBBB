@@ -1,0 +1,71 @@
+h2 {
+    color: white;
+}
+
+h1 {
+
+    margin: 0 auto;
+}
+
+/*h2 {
+    color: white;
+}
+
+.booking-section {
+  
+
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgb(113, 113, 113);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 480px){
+
+    .booking-box {
+    overflow: scroll;
+    background-color: black;
+    width: 99%;
+    height: 520px;
+    padding: 10px;
+     border: 8px solid #DAA520; 
+    margin: 0 auto;
+}
+
+
+.booking-box {
+    overflow: scroll;
+    background-color: transparent;
+    width: 100%;
+    height: 520px;
+    padding: 10px;
+     border: 8px solid #DAA520; 
+    margin: 0 auto;
+}
+
+}*/
+
+
+.backBtn {
+     /*background-image: -webkit-linear-gradient(top, #deab36 0, #deab36 22%, #deab36 48%, #deab36 73%, #d79618 100%);*/
+    background: black;
+    color: #ffc13d;
+    font-size: 15px;
+    border: none;
+    float: left;
+    margin-top: 4px;
+    /*margin-top: 25px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 0px;*/
+    /*border-radius: 4px;*/
+    width: 20px;
+    /*border: 2px solid #DAA520;*/
+    height: 35px;
+}

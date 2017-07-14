@@ -1,0 +1,78 @@
+.form-rowInput {
+    border-bottom: 2px solid #DAA520;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: black;
+    width: 54%;
+    height: 45px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Lato';
+    display: inline-block;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*margin-right: 20px;
+    margin-left: 0px;*/
+}
+
+.form-rowInput.d {
+    border-bottom: 2px solid #DAA520;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: black;
+    width: 25%;
+    height: 45px;
+    /*text-align: center;*/
+    color: #fff;
+    font-family: 'Lato';
+    /*display: block;*/
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-rowInput.e {
+
+    border-bottom: 2px solid #DAA520;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: black;
+    width: 23%;
+    height: 45px;
+    /*text-align: center;*/
+    color: #fff;
+    font-family: 'Lato';
+    /*display: block;*/
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 40px;
+    vertical-align: middle;
+}
+
+.form-row {
+    text-align: center;
+    /*float: none;*/
+    /*display: block;*/
+}
+
+h1{
+    font-weight: 100;
+    font-size: 140%;
+}
+
+h2 {
+
+    margin-top: 80px;
+    /*position: relative;
+top: 50%;
+transform: translateY(-50%); */
+}

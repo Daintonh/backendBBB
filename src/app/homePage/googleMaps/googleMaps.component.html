@@ -1,0 +1,20 @@
+<!--<h1>{{ title }}</h1>-->
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<div class="container">
+<agm-map [scrollwheel]="false" [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false">
+  <agm-marker  *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m.label, i)" [latitude]="m.lat" [longitude]="m.lng" [label]="m.label" >
+     <agm-info-window>
+          <strong>Bedford Stuy Barbers</strong>
+          <p>Dublin 2,</p>
+          <p>5 Cope Street,</p>
+          <p>086 380 2559</p>
+          <a href="https://www.google.ie/maps/place/Bedford+Stuy+Barber/@53.3448473,-6.3332731,12z/data=!4m18!1m12!4m11!1m3!2m2!1d-6.4283735!2d53.4044498!1m6!1m2!1s0x48670e84aa4f0725:0xad8b045bdfccc8ad!2sbedford+stuy+barbers+temple+bar!2m2!1d-6.2632336!2d53.3448678!3m4!1s0x48670e84aa4f0725:0xad8b045bdfccc8ad!8m2!3d53.3448678!4d-6.2632336">View In Maps</a>
+        </agm-info-window>
+  </agm-marker>
+  <!--<sebm-google-map-info-window>
+          <strong>InfoWindow content</strong>
+        </sebm-google-map-info-window>-->
+</agm-map>
+</div>

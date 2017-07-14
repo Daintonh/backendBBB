@@ -1,0 +1,68 @@
+<section class="contact-form">
+    <div class="row">
+        <h2>Get In Contact With Us</h2>
+    </div>
+    <div class="row">
+        <form action="post" [formGroup]="contacFormForm" class="contact-form">
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>Name</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required formControlName="username">
+                </div>
+            </div>
+
+             <div class="row">
+                <div class="col span-1-of-3">
+                    <label>Email</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="email" name="email" id="email" placeholder="Your Email" required formControlName="userEmail">
+                </div>
+            </div>
+
+             <div class="row">
+                <div class="col span-1-of-3">
+                    <label>How did you hear about us?</label>
+                </div>
+                <div class="col span-2-of-3">
+                   <select name="find-us" id="find-us" formControlName="referencePoint">
+                   <option value="friends">Friends</option>
+                   <option value="search">Search Engine</option>
+                   <option value="facebook">Facebook</option>
+                   <option value="ourapp">Our App</option>
+                   </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <label>Newsletter</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <input type="checkbox" name="newsletter" id="newsletter"checked> Yes, Please
+                </div>
+            </div>
+
+             <div class="row">
+                <div class="col span-1-of-3">
+                    <label>Your Message Here</label>
+                </div>
+                <div class="col span-2-of-3">
+                    <textarea name="message" id="message" placeholder="Your Message" required formControlName="message"></textarea>
+                </div>
+            </div>
+
+             <div class="row">
+                <div class="col span-1-of-3">
+                    <label>&nbsp;</label>
+                </div>
+                <div class="col span-2-of-3">
+                   <button [disabled]="contacFormForm.invalid" type="submit" class="btn btn-full" (click)="sendMessage()">Contact</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</section>

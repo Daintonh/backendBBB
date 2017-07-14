@@ -1,0 +1,182 @@
+.mainBg {
+    margin: 0; 
+        /*background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(bgSkull.png);*/
+    background-image: linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)), url(/assets/img/bgSkull.png);
+    background-size: cover;
+    width:100%; 
+    height: 100%;
+    background-position: center;
+    /*-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);*/
+    /*background: no-repeat;*/
+    /*background-position-y: 10%;*/
+    text-align: center;
+    
+    /*height: 100vh;*/
+    background-attachment: fixed;
+    /*background-size: cover;*/
+    /*top: -200px;
+    left: -200px;*/
+    /*background-size: 165%;*/
+     /*-webkit-filter: grayscale(1); 
+  -webkit-filter: grayscale(100%); 
+  -moz-filter: grayscale(100%);
+  filter: gray; 
+  filter: grayscale(100%);
+   transition: transform 3s, filter 1s;*/
+
+    /*font-family: 'AvenirNextLTPro-MediumCn';*/
+
+    /*padding-top: 50px;
+    
+    color: white;
+    font: 40px;*/
+
+    
+    
+}
+
+.mainBg::before {
+ 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  
+  /*-webkit-filter: grayscale(1); 
+  -webkit-filter: grayscale(100%); 
+  -moz-filter: grayscale(100%);
+  filter: gray; */
+  /*filter: grayscale(100%);*/
+  transition: transform 6s, filter 3s;
+  
+  }
+
+  .mainBg:hover{
+      /*-webkit-filter: grayscale(0.1); 
+  -webkit-filter: grayscale(10%); 
+  -moz-filter: grayscale(10%);*/
+  /*filter: gray; */
+  filter: grayscale(0%);
+  
+
+  }
+
+
+
+.logo {
+    /*-webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);*/
+    margin-bottom: 80px;
+    height: 400px;
+}
+
+
+.middle {
+    /*font-family: 'AvenirNextLTPro-Bold',sans-serif;*/
+    /*font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;*/
+    font-weight: normal;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+      
+    /*font-size: 200px;*/
+    
+}
+
+span {
+    font-size: 20px;
+    
+}
+
+.leftButton {
+    margin-left: 50px;
+    color: black;
+    margin-top: 170px;
+    font-size: 30px;
+    float: left;
+    background-color: transparent;
+    border: none;
+}
+
+.rightButton {
+    margin-right: 50px;
+    color: black;
+    margin-top:  170px;
+    font-size: 30px;
+    float: right;
+    background-color: transparent;
+    border: none;
+}
+
+.bookNow {
+    /*font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;*/
+    /*font-family: "Arial", sans-serif;*/
+   font-family: 'Oswald', sans-serif;
+    color: black;
+    background-color: transparent;
+    border: 3px solid black;
+    height: 50px;
+    font-size: 25px;
+    width: 160px;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+
+.explore {
+    /*font-family: "Arial", sans-serif;*/
+        font-family: 'Oswald', sans-serif;
+      color: white;
+    background-color: black;
+    border: 2px solid black;
+    height: 50px;
+    font-size: 25px;
+    width: 160px;
+    text-transform: uppercase;
+    margin-left: 5px;
+
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .logo {
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+
+    .logo {
+        height: 250px;
+    }
+
+    .rightButton {
+        
+    margin-right: 10px;
+    color: black;
+    margin-top: 120px;
+    font-size: 30px;
+    float: right;
+    background-color: transparent;
+    border: none;
+
+    }
+
+      .leftButton {
+        
+    margin-left: 10px;
+    color: black;
+    margin-top: 120px;
+    font-size: 30px;
+    float: left;
+    background-color: transparent;
+    border: none;
+
+    }
+
+}

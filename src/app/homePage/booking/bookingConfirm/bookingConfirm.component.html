@@ -1,0 +1,16 @@
+ <ul *ngIf="serviceSelected=='confirm'"> 
+                <h1>Confirm Booking</h1> 
+                <!--<hr>-->
+                <li><span>Cut: </span><span class="cost-of-cut">{{cutSelected}}</span><br> <h4></h4> </li>
+                <li><span>Barber: </span><span class="cost-of-cut">{{barberSelected | capitalize}}</span><br> <h4></h4> </li>
+                <li><span>Date: </span><span class="cost-of-cut">{{dateSelected | date :'fullDate' }}</span><br> <h4></h4> </li>
+                <li><span>Time: </span><span class="cost-of-cut">{{timeSelected}}</span><br> <h4></h4> </li>
+                
+            </ul> 
+    <div class="row" *ngIf="serviceSelected=='confirm'">
+                    <button (click)="sendDataToFirebase()" class="btn btn-full">Book</button>
+
+                    <!-- If user is loyal they get redirected to page  -->
+                </div>
+            
+

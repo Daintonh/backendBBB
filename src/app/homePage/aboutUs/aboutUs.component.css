@@ -1,0 +1,164 @@
+h2 {
+    color: white;
+}
+
+h3 {
+    color: lightgrey;
+}
+/*.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-size: contain;
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(/assets/img/bgSkull.png);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.overlay a {
+    color: black;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 35px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+section {
+    padding: 50px 0;
+    margin: 0; 
+    background-image: linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)), url(/assets/img/bgSkull.png);
+    background-size: cover;
+    width:100%; 
+    
+    background-position: center;
+   
+    text-align: center;
+    
+    
+    background-attachment: fixed;
+}*/
+
+/*h2 {
+    color: white;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background: #EEE;
+   font: 10px/13px 'Lucida Sans',sans-serif;
+}
+.wrap {
+   overflow: hidden;   
+   margin: 10px;
+}
+.box {
+   float: left;   
+   position: relative;   
+   width: 25%;   
+   padding-bottom: 24%;
+   
+}
+.boxInner {
+   position: absolute;
+   left: 10px;
+   right: 10px;
+   top: 10px;
+   overflow: hidden;
+}*/
+
+
+/*.boxInner img {
+   width: 100%;
+   overflow: hidden;
+    height: 300px;
+   border: 4px solid black;
+   object-fit: cover;
+}
+
+
+.boxInner:hover .overlay {
+  bottom: 10px;
+  height: 100%;
+
+  
+}
+
+.boxInner:hover .overlay a {
+    color: white;
+}
+
+.boxInner img:hover{
+ 
+}
+
+
+
+@media only screen and (max-width : 480px) {
+   .box {
+    width: 100%;
+    padding-bottom: 70%;
+}
+
+
+   
+
+   .boxInner img {
+       height: auto;
+       height: 240px;
+    border: 4px solid black;
+    object-fit: cover;
+   }
+
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+
+   .boxInner img {
+      
+     
+       height: 240px;
+    border: 4px solid black;
+    object-fit: cover;
+   }
+}*/
+/*@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   .box {
+      width: 33.3%;
+    padding-bottom: 28.3%;
+   }
+
+   .boxInner img {
+       height: 240px;
+    border: 4px solid black;
+    object-fit: cover;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+
+   .boxInner img {
+       height: 240px;
+    border: 4px solid black;
+    object-fit: cover;
+   }
+}*/

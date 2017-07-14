@@ -1,0 +1,18 @@
+.modal-body {
+       /*background-color: #DAA520;*/
+}
+
+h2 {
+        margin-bottom: 1.5rem;
+}
+
+h3 {
+    text-align: center;
+    margin: 40px;
+    color: #929292;
+    font-weight: 300;
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,31 @@
+<!--<div class="sidebar">ssdsdds</div>-->
+
+<nav class="top-nav scrolling" [attr.data-target]=" '#' + cartPurchasingBox.modalId" data-toggle="modal" (click)="tooggleCart()" >
+    <i class="fa fa-briefcase" aria-hidden="true"></i><span *ngIf="cartBeingUsed =='true'" class="notification">{{cartCost}}</span>
+    <!--<p style="color: white"></p>-->
+    <!--<li style="color: white" *ngFor="let product of productsCart">{{product.name}}</li> -->
+</nav>
+
+<headerTop></headerTop>
+
+<booking id='booking'></booking>
+
+<aboutUs id='aboutUs'></aboutUs>
+
+<portfolio id='portfolio'></portfolio>
+
+<getTheApp></getTheApp>
+
+<testimonial></testimonial>
+<cartPurchasingBox #cartPurchasingBox></cartPurchasingBox>
+
+<locations></locations>
+
+<pricing></pricing>
+<products></products>
+
+<contactForm id='contactUs'></contactForm>
+
+<googleMaps></googleMaps>
+
+<footerBottom></footerBottom>

@@ -1,0 +1,93 @@
+.productImg {
+    object-fit: cover;
+    height: 200px;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.oneThird{
+     display: inline-block;
+    /*float: left;*/
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    right: 0;
+    bottom: 0%;
+    top: 0%;
+    opacity: 0;
+    background-color: rgba(218, 165, 32, 0.76);
+    background-size: contain;
+    /* background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), url(/assets/img/bgSkull.png); */
+    overflow: hidden;
+    transition: 0.9s ease;
+    cursor: pointer;
+    outline-offset: 5px;
+    outline: 2px solid white;
+
+}
+
+.overlayTapped {
+       position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    right: 0;
+    bottom: 0%;
+    top: 0%;
+    opacity: 0;
+    background-color: black;
+    background-size: contain;
+    /* background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), url(/assets/img/bgSkull.png); */
+    overflow: hidden;
+    transition: 0.9s ease;
+    cursor: pointer;
+    outline-offset: 5px;
+    outline: 2px solid white;
+}
+
+.oneThird:hover .overlayTapped {
+  /*bottom: 0px;*/
+  /*height: 100%;*/
+  opacity: 1;
+ 
+
+    /*border: none;
+    overflow: hidden;*/
+    /*border-radius: 28px;*/
+}
+
+
+.oneThird:hover .overlay {
+  /*bottom: 0px;*/
+  /*height: 100%;*/
+  opacity: 1;
+ 
+
+    /*border: none;
+    overflow: hidden;*/
+    /*border-radius: 28px;*/
+}
+
+.text {
+  /*white-space: nowrap; */
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

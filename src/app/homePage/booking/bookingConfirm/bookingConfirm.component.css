@@ -1,0 +1,55 @@
+.cost-of-cut{
+    color: #fff;
+}
+
+span {
+    color: #ccc;
+}
+
+.row {
+    text-align: center;
+}
+
+.btn-full {
+    float: none;
+   margin: 0 auto;
+    border-radius: 4px;
+    width: 150px;
+    border: 2px solid #DAA520;
+    cursor: pointer;
+    height: 50px;
+    
+
+}
+
+button {
+    background-image: -webkit-linear-gradient(top, #deab36 0, #deab36 22%, #deab36 48%, #deab36 73%, #d79618 100%);
+    border: 2px solid #DAA520;
+    float: none;
+    /*margin-top: 25px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 0px;*/
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 150px;
+    border: 2px solid #DAA520;
+    height: 50px;
+    cursor: pointer;
+}
+
+h1 {
+    color: white;
+    font-size: 140%;
+    margin: 0 auto;
+}
+
+ .booking-box .btn-full {
+        padding-left: 45px;
+        padding-right: 45px;
+        font-size: 30px;
+    }
+
+    ul {
+        margin-top: 10px;
+    }

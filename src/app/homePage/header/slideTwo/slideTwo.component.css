@@ -1,0 +1,60 @@
+.mainBg {
+    margin: 0; 
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(/assets/img/bgSkull.png);
+    background-size: cover;
+    width:100%; 
+    height: 100%;
+    background-position: center;
+    /*background: no-repeat;*/
+    /*background-position-y: 10%;*/
+    text-align: center;
+    
+    /*height: 100vh;*/
+    background-attachment: fixed;
+    /*top: -200px;
+    left: -200px;*/
+    background-size: 100%;
+    /*font-family: 'AvenirNextLTPro-MediumCn';*/
+
+    /*padding-top: 50px;
+    
+    color: white;
+    font: 40px;*/
+
+    
+}
+
+.middle {
+    font-family: 'AvenirNextLTPro-MediumCn';
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+    /*font-size: 200px;*/
+    
+}
+
+
+span {
+    font-size: 20px;
+    
+}
+
+.leftButton {
+    margin-left: 50px;
+    color: white;
+    margin-top: 170px;
+    font-size: 30px;
+    float: left;
+    background-color: transparent;
+    border: none;
+}
+
+.rightButton {
+    margin-right: 50px;
+    color: white;
+    margin-top:  170px;
+    font-size: 30px;
+    float: right;
+    background-color: transparent;
+    border: none;
+}

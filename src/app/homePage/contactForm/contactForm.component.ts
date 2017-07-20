@@ -30,66 +30,30 @@ export class ContactFormComponent implements OnInit {
   }
 
 
-  
+  // https://us-central1-frontendbarber.cloudfunctions.net/httpEmail
 
-
-sendMessage(){
-
-    // this.contacFormForm = this.formB.group({
-    //         name: [this.currentUser.name, Validators.required],
-    //         email: [this.currentUser.email, Validators.required],
-    //         credit: [this.currentUser.credit],
-    //         notes: [this.currentUser.notes, Validators.required],
-    //         phoneNumber: [this.currentUser.phoneNumber, Validators.required],
-    //     });
-  var date = new Date().getTime();
-  var contactFormMessage = new ContactFormMessage(date, this.contacFormForm.value["username"], this.contacFormForm.value["userEmail"], this.contacFormForm.value["message"], this.contacFormForm.value["referencePoint"], "Yes");    
-
-  this.contactFormSVC.addUser(contactFormMessage);
-
-    this.contacFormForm = this.formB.group({
-                  username: [""],
-                  userEmail: [""],
-                  referencePoint: ["friends"],
-                  message: [""],
-
-      });
-
-}
-
-
-
-
-
-
+//  constructor(private http: Http) { }
 
   sendEmail() {
 
-    // let url = `https://us-central1-frontendbarber.cloudfunctions.net/httpEmail`
-    // let params: URLSearchParams = new URLSearchParams();
+    let url = 'https://us-central1-frontendbarber.cloudfunctions.net/httpEmail';
+    let params: URLSearchParams = new URLSearchParams();
+    let headers = new Headers({'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
 
-    // let headers = new Headers({'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+    params.set('to', 'foodplusoffice@gmail.com');
+    params.set('from', 'jackquinn.9515@gmail.com');
+    params.set('subject', 'test-email');
+    params.set('content', 'Hello World');
 
-    // params.set('to', 'foodplusoffice@gmail.com');
-    // params.set('from', 'jackquinn.9515@gmail.com');
-    // params.set('subject', 'fihsjnfnjdskjknsd');
-    // params.set('content', 'ffddfgnjjnjnfjnfvj');
-
-    // return this.http.post(url, params, headers)
-    //                 .toPromise()
-    //                 .then( res => {
-    //                   console.log(res)
-    //                 })
-    //                 .catch(err => {
-    //                   console.log(err)
-    //                 })
-
-  }
-
-
-  submitContactForm(){
+    return this.http.post(url, params, headers)
+                    .toPromise()
+                    .then( res => {
+                      console.log(res)
+                    })
+                    .catch(err => {
+                      console.log(err)
+                    })
 
   }
 
 }
-

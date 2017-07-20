@@ -32,6 +32,7 @@ export class CartPurchasingBoxComponent implements OnInit {
 
         selectedFiles: FileList;
         // currentUpload: Upload;
+        modalDeleteUser;
 
         public datesArray: Date[]=[];
 
